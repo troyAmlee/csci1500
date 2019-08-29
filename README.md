@@ -1,2 +1,2 @@
 # csci1500
-c++ programming college course
+C++ programming college course I am taking. Using this repo to store project source code.
