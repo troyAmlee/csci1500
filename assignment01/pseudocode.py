@@ -39,14 +39,15 @@ def jogger(miles):
         miles = round(miles, 1)
     total_laps = miles*14
     
-    print(f"You need to jog {total_laps} laps.")
+    print("Since our track is 1/14th of a mile \nYou need to jog {} laps.".format(total_laps))
        
 jogger(mileage)
 
 
 
 # 2.	Write a program that will compute the surface area and the volume of a box. 
-# The program should prompt the user to enter the length, width, and height of the box (all in inches), read these numbers, and then calculate and display the box surface area and volume.  
+# The program should prompt the user to enter the length, width, and height of the box (all in inches), 
+# read these numbers, and then calculate and display the box surface area and volume.  
 # Note: Box surface area = 2(lw + lh + wh) and box volume = lwh, where l = box length, w = box width, and h = box height. 
 # You should assume that the box length, width, and height entered will be positive integer values. 
 # Here is what output should look like from running the program (user input is shown in bold):
@@ -55,12 +56,28 @@ jogger(mileage)
 # Box volume = 108 cubic inches
 
 
+
+def box():
+    print("Welcome to the box calculator")
+    print("Please enter the dimensions of your box in inches:")
+    length = int(input("length: "))
+    width = int(input("width: "))
+    height = int(input("height: "))
+    box_area = 2*(length*width+length*height+width*height)
+    box_volume = length*width*height
+    print("Box surface area = {} square inches".format(box_area))
+    print("Box volume = {} cubic inches".format(box_volume))
+
+    
+box()
     
 
 
         
-# 3.	Write a program that converts an input number of quarters, dimes, nickels, and pennies into a dollar total. 
-# First, for each of the coin denominations, the program should prompt the user to enter the number of that coin and then read that number. 
+# 3.	Write a program that converts an input number of quarters, dimes, nickels, and pennies into 
+# a dollar total. 
+# First, for each of the coin denominations, the program should prompt the user to 
+# enter the number of that coin and then read that number. 
 # Then, the program should calculate and display the coin counts and the total coin value in dollars. 
 # You should assume that the coin counts entered will be non-negative integers. 
 # But, note that the total coin value will be a floating point value. 
@@ -71,14 +88,30 @@ jogger(mileage)
 # Enter number of pennies: 4
 # 2 quarters, 3 dimes, 5 nickels, and 4 pennies = $1.09
 
+def money():
+    print("How much change do you have? ")
+    quarters = int(input("Enter number of quarters: "))
+    dimes = int(input("Enter number of dimes: "))
+    nickels = int(input("Enter number of nickels: "))
+    pennies = int(input("Enter number of pennies: "))
+
+    total_quarters = quarters*.25
+    total_dimes = dimes*.10
+    total_nickels = nickels*.05
+    total_pennies = pennies*.01
+
+    total = total_quarters + total_dimes + total_nickels + total_pennies
+
+    print(f"{quarters} quarters, {dimes} dimes, {nickels} nickels, and {pennies} pennies = ${total}")
+
+money()
 
 
-
-
-
-# 4.	Write a program that converts a measurement given in feet into the equivalent number of (a) yards, (b) inches, (c) centimeters, (d) meters. 
+# 4.	Write a program that converts a measurement given in feet into the equivalent number of 
+# (a) yards, (b) inches, (c) centimeters, (d) meters. 
 # The program should first prompt the user to enter the number of feet to be converted. 
-# It should then read that value, calculate each of the converted lengths, and then display the converted lengths, rounded to two decimal places of accuracy. 
+# It should then read that value, calculate each of the converted lengths, and then 
+# display the converted lengths, rounded to two decimal places of accuracy. 
 # You should assume that the number of feet entered will be a floating point value. 
 # Note: All the converted lengths will also be floating point values. 
 # Conversion facts:  
@@ -117,14 +150,14 @@ jogger(mileage)
 
 # Using the pseudocode you developed for each of the problems given in Part 1, write complete C++ programs for each of the problems. 
 # Here are the things you need to do for each problem:
-# · Convert your pseudocode into C++ code. 
+# Convert your pseudocode into C++ code. 
 # Follow the coding guidelines in the textbook. 
 # Remember to use appropriate data types for all variables. 
 # Remember to include each name of your group in a comment at the top of the program.
-# · Save your source code – use a descriptive filename so that you remember what is what. 
+# Save your source code use a descriptive filename so that you remember what is what. 
 # When working on campus, save the file to the C:\CSCI1500 folder and then when you are done, copy the saved source code (i.e., the .cpp file) to your flash stick.
-# · Compile and run the program and verify that it works properly.
-# · Print out the source code.
+# Compile and run the program and verify that it works properly.
+# Print out the source code.
 
 # What you need to turn in: A printed copy of your C++ source code for each of the problems, arranged in order, and stapled together. 
 # Include each name of your group on the front page of your print-outs. 
