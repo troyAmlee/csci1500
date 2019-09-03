@@ -126,13 +126,28 @@ money()
 # = 121.92 cm
 # = 1.22 meters
 
+def feet_conversion():
+    feet = float(input("Please input the number of feet to be converted: "))
+    yards = round((feet*12)/36, 2)
+    inches = round(feet*12, 2)
+    centimeters = round((feet*12)*2.54, 2)
+    meters = round((feet*12)*(2.54)/(100), 2)
+
+    print(f"= {yards} yards")
+    print(f"= {inches} inches")
+    print(f"= {centimeters} cm")
+    print(f"= {meters} meters")
+
+feet_conversion()
 
 
 
 
 
-# 5.	Write a program that converts a liquid measurement given in ounces into the equivalent measurement given in quarts and ounces. 
-# The program should first prompt the user to enter the total ounces amount, read the number in, and then convert and display what that total ounce amount is equal to in quarts and ounces. 
+# 5.	Write a program that converts a liquid measurement given in ounces into 
+# the equivalent measurement given in quarts and ounces. 
+# The program should first prompt the user to enter the total ounces amount, read the number in, and then 
+# convert and display what that total ounce amount is equal to in quarts and ounces. 
 # You should assume that the number of total ounces entered will be a positive integer. 
 # Note that the number of quarts and remainder ounces will also be integer values. 
 # Conversion fact: 1 quart = 32 ounces. 
