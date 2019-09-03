@@ -156,7 +156,13 @@ feet_conversion()
 # 68 oz. = 2 qt. 4 oz.
 # 	Hint:  Make use of the integer division and modulus operators.
 
+def liquid():
+    ounces = int(input("Please enter number of ounces: "))
+    leftover_oz = ounces%32
+    max_quarts = ounces//32
+    print(f"{ounces} oz. = {max_quarts} qt. {leftover_oz} oz.")
 
+liquid()
 
 
 
