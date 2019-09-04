@@ -51,7 +51,7 @@ int jogger(){
 
 double box(){
 	cout << "Welcome to the box calculator" << endl;
-	cout << "Please enter the dimensions of your box in inches: ";
+	cout << "Please enter the dimensions of your box in inches (l w h): ";
 	int length;
 	int width;
 	int height;
@@ -60,7 +60,7 @@ double box(){
 	double boxVolume = length*width*height;
 	cout << "Box surface area = " << boxArea << " square inches" << endl;
 	cout << "Box volume = " << boxVolume << " cubic inches" << endl;
-	
+	return 0;
 }
 
 double money(){
@@ -96,6 +96,7 @@ double money(){
 		 << dimes << " dimes, "
 		 << nickels << " nickels, and "
 		 << pennies << " pennies = $" << total << endl;
+	return 0;
 }
 
 double feetConversion(){
@@ -116,6 +117,7 @@ double feetConversion(){
 		 << "= " << inches << " inches" << endl
 		 << "= " << centimeters << " centimeters" << endl
 		 << "= " << meters << " meters" << endl;
+	return 0;
 }
 
 double liquid(){
@@ -129,4 +131,5 @@ double liquid(){
 	maxQuarts = ounces/32;
 	cout << ounces << " oz. = " << maxQuarts << " qt. " 
 		 << leftoverOz << " oz." << endl;
+	return 0;
 }
