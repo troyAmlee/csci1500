@@ -140,7 +140,15 @@ double money(){
 // 
 // Pseudocode solution:
 // Display "Please input number of feet to be converted: "
-// 
+// Read the number of feet into the variable feet
+// Let yards = (feet*12)/36
+// Let inches = feet*12
+// Let centimeters = (feet*12)*2.54
+// Let meters = (feet*12)*(2.54)/(100)
+// 	Display "= " and yards and " yards"
+// 			and "= " and inches and " inches"
+// 			and "= " and centimeters and " centimeters"
+// 			and "= " and meters and " meters"
 
 double feetConversion(){
 	int feet;
@@ -165,8 +173,15 @@ double feetConversion(){
 }
 
 // Variables required:
+// ounces, leftoverOz, maxQuarts: (integer) to store the input of ounces, leftover ounces, and the total quarts
 
 // Pseudocode solution:
+// Display "Please enter number of ounces: "
+// Read the number of ounces into the variable ounces
+// Let leftoverOz = ounces%32
+// Let maxQuarts = ounces/32
+// Display ounces and " oz. = " and maxQuarts and " qt. "
+// 		and leftoverOz and " oz."
 
 double liquid(){
 	int ounces;
