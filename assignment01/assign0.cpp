@@ -9,7 +9,6 @@ double box();
 double money();
 double feetConversion();
 double liquid();
-double average();
 
 int main()
 {	
@@ -18,7 +17,6 @@ int main()
 	money();
 	feetConversion();
 	liquid();
-	average();
 	
 	return 0;
 }
