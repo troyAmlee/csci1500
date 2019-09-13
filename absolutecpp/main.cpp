@@ -12,23 +12,6 @@ double liquid();
 
 int main(int argc, char **argv)
 {
-//	double one;
-//	double two;
-//	double three;
-//	string ding = "please enter three numbers: ";
-//	cout << ding;
-//	cin >> one >> two >> three;
-//	cout << one << endl << two << endl << three << endl;
-//	
-//	int feet(0); // int feet = 0;
-//	int inches(0); //int inches = 0;
-//	// int feet = 0, inches = 0;
-//	// int feet(0), inches(0);
-//	
-//	int count = 0;
-//	double distance = 1.5;
-//	
-//	cout << count << endl <<  distance << endl;
 	
 	jogger();
 	box();
