@@ -143,10 +143,10 @@ double money(){
 // Let inches = feet*12
 // Let centimeters = (feet*12)*2.54
 // Let meters = (feet*12)*(2.54)/(100)
-// 	Display "= " and yards and " yards"
-// 			and "= " and inches and " inches"
-// 			and "= " and centimeters and " centimeters"
-// 			and "= " and meters and " meters"
+// Display "= " and yards and " yards"
+// 		and "= " and inches and " inches"
+// 		and "= " and centimeters and " centimeters"
+// 		and "= " and meters and " meters"
 
 double feetConversion(){
 	int feet;
