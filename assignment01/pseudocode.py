@@ -55,7 +55,15 @@ jogger(mileage)
 # Box surface area = 168 square inches
 # Box volume = 108 cubic inches
 
-
+####################################################################################
+# Display "Please enter the dimensions of your box in inches: "
+# Read the length into the variable length
+# Read the width into the variable width
+# Read the height into the variable height
+# Let the variable box_area = 2*(length*width+length*height+width*height)
+# Let the variable box_volume = length*width*height
+# Display "Box surface area = " and "box_area" and " square inches"
+# 
 
 def box():
     print("Welcome to the box calculator")
