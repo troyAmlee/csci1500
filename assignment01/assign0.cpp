@@ -23,6 +23,16 @@ int main()
 	return 0;
 }
 
+// Variables required:
+// miles: (integer) to store the number of miles to jog
+// totalLaps: (integer) to store the total number of laps converted
+//
+// Pseudocode solution:
+// Display "Enter number of miles to jog: "
+// Read the number of miles into the variable miles
+// Let the variable totalLaps = miles*14
+// Display "You need to jog " and totalLaps and " laps." and endline
+
 int jogger(){
 	int miles;
 	cout << "Enter number of miles to jog: ";
@@ -32,6 +42,20 @@ int jogger(){
 	
 	return 0;
 }
+
+// Variables required:
+// length, width, height: (integer) to store the length, width, and height
+// box_area, box_volume: (double) to store the boxes area, and boxes volume 
+//
+// Pseudocode solution:
+// Display "Please enter the dimensions of your box in inches: "
+// Read the length into the variable length
+// Read the width into the variable width
+// Read the height into the variable height
+// Let the variable box_area = 2*(length*width+length*height+width*height)
+// Let the variable box_volume = length*width*height
+// Display "Box surface area = " and box_area and " square inches"
+// Display "Box volume = " and box_volume and " cubic inches"
 
 double box(){
 	cout << "Welcome to the box calculator" << endl;
@@ -48,6 +72,30 @@ double box(){
 	return 0;
 }
 
+// Variables required:
+// quarters, dimes, nickels, pennies: (integer) to store the number of quarters, dimes, nickels, and pennies
+// totalQuarters, totalDimes, totalNickels, totalPennies: (double) to store the total of quarters, dimes, nickels, and pennies
+// total: (double) to store the total amount of money added together
+
+// Pseudocode solution:
+// Display "How much change do you have?"
+// Display "Enter the number of quarters: "
+// Read the number of quarters into the variable quarters
+// Display "Enter the number of dimes: "
+// Read the number of dimes into the variable dimes
+// Display "Enter the number of nickels: "
+// Read the number of nickels into the variable nickels
+// Display "Enter the number of pennies: "
+// Read the number of pennies into the variable pennies
+// Let totalQuarters = quarters*.25
+// Let totalDimes = dimes*.10
+// Let totalNickels = nickels*.05
+// Let totalPennies = pennies*.01
+// Set output decimal precision to 2
+// Let total = totalQuarters+totalDimes+totalNickels+totalPennies
+// Display quarters and " Quarters " and dimes and " Dimes " and nickels and " Nickels, and " and pennies and " Pennies = $"
+// 		 and total
+
 double money(){
 	cout << "How much change do you have?" << endl;
 	int quarters;
@@ -58,6 +106,7 @@ double money(){
 	double totalDimes;
 	double totalNickels;
 	double totalPennies;
+	double total;
 	
 	cout << "Enter number of quarters: ";
 	cin >> quarters;
@@ -75,7 +124,7 @@ double money(){
 	cout.setf(ios::showpoint);
 	cout.precision(2);
 	
-	double total = totalQuarters+totalDimes+totalNickels+totalPennies;
+	total = totalQuarters+totalDimes+totalNickels+totalPennies;
 	
 	cout << quarters << " quarters, "
 		 << dimes << " dimes, "
@@ -84,6 +133,14 @@ double money(){
 		 
 	return 0;
 }
+
+// Variables required:
+// feet: (integer) to store the number of feet to be converted
+// yards, inches, centimeters, meters: (double) to store the number of yards, inches, centimeters, and meters
+// 
+// Pseudocode solution:
+// Display "Please input number of feet to be converted: "
+// 
 
 double feetConversion(){
 	int feet;
@@ -107,6 +164,10 @@ double feetConversion(){
 	return 0;
 }
 
+// Variables required:
+
+// Pseudocode solution:
+
 double liquid(){
 	int ounces;
 	int leftoverOz;
@@ -120,16 +181,3 @@ double liquid(){
 		 << leftoverOz << " oz." << endl;
 	return 0;
 }
-
-//double average(){
-//	cout << "Enter the price (x y z): " << endl;
-//	double x;
-//	double y;
-//	double z;
-//	cin >> x >> y >> z;
-//	double sum;
-//	sum = x + y + z;
-//	double average_;
-//	average_ = sum/3.0;
-//	cout << "The average variable = " << average_ << endl;
-//}
