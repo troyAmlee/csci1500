@@ -10,7 +10,7 @@ double money();
 double feetConversion();
 double liquid();
 
-int main(int argc, char **argv)
+int main()
 {
 	
 	jogger();
