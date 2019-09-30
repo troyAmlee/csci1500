@@ -21,23 +21,34 @@
 #include <string>
 using namespace std;
 
+/*
+variables required:
+temp (floating point) to store the number of degrees to convert
+letter (character) to store the character 'F' or 'C'
+
+pseudocode solution:
+Display "Please enter a temperature in Celsius (C) or Farhenheit (F): "
+Read the temperature and temperature letter into the variables temp and letter
+if letter == 'f' or letter == 'F'
+    Display temp and " " and letter and " = " and (5.0/9.0)*(temp - 32.0) and " C"
+else if letter == 'c' or letter == 'C'
+    Display temp and " " and letter and " = " and 1.8 * temp + 32.0 and " F"
+*/
+
 int main(){
 	double temp;
 	char letter;
-	double temp_conversion;
-	cout << "Please enter a temperature in Celsius (C) or Farhenheit (F): " << endl;
+	cout << "Please enter a temperature in Celsius (C) or Farhenheit (F): ";
 	cin >> temp >> letter;
 	
 	if (letter == 'f' || letter == 'F'){
-		temp_conversion = (5.0/9.0)*(temp - 32.0);
-		cout << temp << " " << letter << " = " << temp_conversion << " C" << endl;
+		cout << temp << " " << letter << " = " << (5.0/9.0)*(temp - 32.0) << " C" << endl;
 	}
 	
 	else if (letter == 'c' || letter == 'C'){
-		temp_conversion = 1.8 * temp + 32.0;
-		cout << temp << " " << letter << " = " << temp_conversion << " F" << endl;
+		cout << temp << " " << letter << " = " << 1.8 * temp + 32.0 << " F" << endl;
 	}
-	return 0;
 	
+	return 0;
 }
 

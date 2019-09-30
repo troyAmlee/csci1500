@@ -1,0 +1,1 @@
+./build-Debug//score_group4_question3.cpp.o ./build-Debug//grade_group4_question2.cpp.o ./build-Debug//temp_group4_question1.cpp.o ./build-Debug//shirts_group4_question4.cpp.o   
