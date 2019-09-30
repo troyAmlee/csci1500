@@ -1,22 +1,26 @@
 #include <iostream>
 #include <string>
 
-//2. The grade level of undergraduate college students is determined according to the following schedule:
-//
-//Number of credits completed	Grade level
-//less than 32	Freshman
-//32 to 63	Sophomore
-//64 to 95	Junior
-//96 or more	Senior
-//
-//Using this information, 
-//write a program that prompts for and reads the integer number of credits that a student has completed, 
-//determines the student's grade level, and displays the grade level. Here is an example of what output should look like from running your program (user input is in bold):
-//Enter number of credits: 70
-//Grade level: Junior
-
-
 using namespace std;
+
+/*
+Variables required:
+credits (integer) stores the number of college credits
+grade_level (string) stores the string indicating the grade level
+
+Pseudocode solution:
+Display "Please enter the number of college credits you have completed so far: "
+Read the number of credits into the variable credits
+if credits < 32
+    grade_level = "Freshman"
+else if credits >= 32 and credits <= 63
+    grade_level = "Sophomore"
+else if credits >= 64 and credits <= 95
+    grade_level = "Junior"
+else
+    grade_level = "Senior"
+Display "Grade level: " and grade_level
+*/
 
 int main(){
 	int credits;
@@ -37,7 +41,6 @@ int main(){
 	else {
 		grade_level = "Senior";
 	}
-		
 	
 	cout << "Grade level: " << grade_level;
 		

@@ -3,14 +3,6 @@
 
 using namespace std;
 
-//3. Write a program that prompts for and inputs three exam scores (an integer between 0 and 100) 
-//and then outputs both the highest and the lowest of the scores. 
-//Note: Do not assume that the user will enter the scores in any particular numerical order. 
-//Here is an example of what output should look like from running your program (user input is in bold):
-//Enter three exam scores: 70 60 90
-//Highest score = 90
-//Lowest score = 60
-
 
 int main(){
 	double first_score;
