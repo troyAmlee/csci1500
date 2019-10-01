@@ -22,6 +22,8 @@
 using namespace std;
 
 /*
+ * Assignment 02, Question 1
+ * 
 variables required:
 temp (floating point) to store the number of degrees to convert
 letter (character) to store the character 'F' or 'C'

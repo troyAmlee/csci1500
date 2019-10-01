@@ -4,6 +4,8 @@
 using namespace std;
 
 /*
+ * Assignment 02, Question 2
+ * 
 Variables required:
 credits (integer) stores the number of college credits
 grade_level (string) stores the string indicating the grade level

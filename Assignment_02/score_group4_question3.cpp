@@ -2,6 +2,8 @@
 using namespace std;
 
 /*
+ * Assignment 02, Question 3
+ * 
  * Variables required:
  * first_score, 
  * second_score, 
