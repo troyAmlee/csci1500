@@ -13,8 +13,10 @@ int main(){
     double bee;
     double cee;
     double ex;
+    //^^These may be uneccessary^^
     cout << "f(x) = ax² + bx + c" << endl;
     cout << "Enter a, b, and c: ";
+    //vv Could define them here vv
     cin >> aye >> bee >> cee;
     while(aye == 0){
         cout << "a cannot be 0" 
