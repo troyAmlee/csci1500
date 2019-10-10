@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <array>
 #include <cmath>
 
 using namespace std;
@@ -8,7 +7,7 @@ using namespace std;
 void divisors(int num){
     int count = 0;
     double totalsumdiv = 0;
-    array<int,100> array1;
+    int array1 [100];
     for(int i = 2; i < num; i++){
         if(num%i == 0){
             array1[count] = i;
