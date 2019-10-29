@@ -7,7 +7,11 @@ using namespace std;
 void divisors(int num){
     int count = 0;
     double totalsumdiv = 0;
+<<<<<<< HEAD
     int array1 [200000];
+=======
+    double array1 [200000];
+>>>>>>> d5ed506f84ac53f74dd16c68bcbb960654998029
     for(int i = 2; i < num; i++){
         if(num%i == 0){
             array1[count] = i;

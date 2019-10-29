@@ -1,0 +1,59 @@
+1.
+Variables Required:
+num, i, total (floating point): num to store the input number by the user,
+	i to represent the reciprocal by incrementing by 1 in the denominator, 
+	and total to store the sum of all the reciprocals.
+
+Pseudocode Solution:
+Display: "Enter a positive integer. "
+Read a positive integer into the variable num
+
+
+2.
+Variables Required:
+
+Pseudocode Solution:
+
+
+3.
+Variables Required:
+
+Pseudocode Solution:
+
+
+4.
+Variables Required:
+
+Pseudocode Solution:
+
+
+5.
+Variables Required:
+
+Pseudocode Solution:
+
+
+6.
+Variables Required:
+
+Pseudocode Solution:
+
+
+7.
+Variables Required:
+
+Pseudocode Solution:
+
+
+8.
+Variables Required:
+
+Pseudocode Solution:
+
+
+1.
+Variables Required:
+
+Pseudocode Solution:
+
+
