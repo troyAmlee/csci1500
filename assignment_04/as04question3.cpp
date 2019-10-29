@@ -64,6 +64,7 @@ int main(){
 		 cout << "Continue (y or n)? ";
 		 while(cin >> character){
 		 	if (character == 'y' || character == 'Y'){
+		 		cout << "------------------------------------------------ \n";
 		 		main();
 		 	}
 		 	else{
