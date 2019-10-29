@@ -7,10 +7,11 @@ using namespace std;
 void divisors(int num){
     int count = 0;
     double totalsumdiv = 0;
-    int array1 [100000];
+    int array1 [200000];
     for(int i = 2; i < num; i++){
         if(num%i == 0){
             array1[count] = i;
+            cout << array1[] << endl;
             count++;
         }
     }
