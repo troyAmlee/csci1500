@@ -29,7 +29,7 @@ int main(){
 	
 	double changedue = (tender - purAmt);
 	
-	cout << "Change due: " << changedue << endl;
+	cout << "Change due: $" << changedue << endl;
 	
 	bills(changedue, twenties, tens, fives, ones);
 	

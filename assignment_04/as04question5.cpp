@@ -15,17 +15,17 @@ int main(){
 	double payRate = 0;
 	cout << "What is your name?: ";
 	cin >> name1 >> name2;
-	cout << "Enter rate: ";
+	cout << "Enter rate: $";
 	cin >> payRate;
 	cout << "Overtime? (y or n): ";
 	cin >> option;
 	if (option == 'y' || option == 'Y'){
 		cout << "Enter overtime hours: ";
 		cin >> overtimeRate;
-		cout << "Name: " << name1 << " " << name2 << " Wages: " << wage(payRate, overtimeRate) << endl;
+		cout << "Name: " << name1 << " " << name2 << " Wages: $" << wage(payRate, overtimeRate) << endl;
 	}
 	else{
-		cout << "Name: " << name1 << " " << name2 << " Wages: " << wage(payRate) << endl;
+		cout << "Name: " << name1 << " " << name2 << " Wages: $" << wage(payRate) << endl;
 	}
 	
 	cout << "Enter another? (y or n): ";
