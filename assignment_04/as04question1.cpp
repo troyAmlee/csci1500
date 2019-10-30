@@ -19,10 +19,10 @@ int main(){
 	
 	time (seconds,hours,min,sec);
 	
-	cout << seconds << "seconds = " 
-	     << hours << " hour(s)"
-	     << min << " minute(s)" 
-		 << sec << " second(s)";
+	cout << seconds << " seconds = " 
+	     << hours << " hour(s) "
+	     << min << " minute(s) " 
+		 << sec << " second(s) ";
 	
 	return 0;
 }
