@@ -22,10 +22,22 @@ int main(){
 	if (option == 'y' || option == 'Y'){
 		cout << "Enter overtime hours: ";
 		cin >> overtimeRate;
-		cout << "Name: " << name1 << " " << name2 << " Wages: $" << wage(payRate, overtimeRate) << endl;
+		cout << "Name: " 
+			 << name1 
+			 << " " 
+			 << name2 
+			 << " Wages: $" 
+			 << wage(payRate, overtimeRate) 
+			 << endl;
 	}
 	else{
-		cout << "Name: " << name1 << " " << name2 << " Wages: $" << wage(payRate) << endl;
+		cout << "Name: " 
+			 << name1 
+			 << " " 
+			 << name2 
+			 << " Wages: $" 
+			 << wage(payRate) 
+			 << endl;
 	}
 	
 	cout << "Enter another? (y or n): ";
