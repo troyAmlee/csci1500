@@ -3,9 +3,9 @@
 #include <cmath>
 using namespace std;
 
-double bills(double& change, int& twenty, int& ten, int& five, int& one);
+int bills(int& change, int& twenty, int& ten, int& five, int& one);
 
-double coins(double& change, int& quarter, int& dime, int& nickel, int& penny);
+int coins(int& change, int& quarter, int& dime, int& nickel, int& penny);
 
 int main(){
 	char character;
@@ -28,10 +28,11 @@ int main(){
 	cout << "Amount tendered: " << tender << endl;
 	
 	double changedue = (tender - purAmt);
+	int temp = changedue*100;
 	
 	cout << "Change due: $" << changedue << endl;
 	
-	bills(changedue, twenties, tens, fives, ones);
+	bills(temp, twenties, tens, fives, ones);
 	
 	cout << "Bills:" 
 		 << endl 
@@ -46,7 +47,7 @@ int main(){
 		 << " - $1's  | "
 		 << endl;
 	
-	coins(changedue, quarters, dimes, nickels, pennies);
+	coins(temp, quarters, dimes, nickels, pennies);
 	
 	cout << "Coins:" 
 		 << endl 
@@ -74,27 +75,27 @@ int main(){
 
 }
 
-double bills(double& change, int& twenty, int& ten, int& five, int& one){
-	twenty = change/20;
-	double leftovers = fmod(change, 20);
-	ten = leftovers/10;
-	leftovers = fmod(leftovers, 10);
-	five = leftovers/5;
-	leftovers = fmod(leftovers, 5);
-	one = leftovers/1;
-	leftovers = fmod(leftovers, 1);
+int bills(int& change, int& twenty, int& ten, int& five, int& one){
+	twenty = change/2000;
+	int leftovers = change%2000;
+	ten = leftovers/1000;
+	leftovers = leftovers%1000;
+	five = leftovers/500;
+	leftovers = leftovers%500;
+	one = leftovers/100;
+	leftovers = leftovers%100;
 	change = leftovers;
 }
 
-double coins(double& change, int& quarter, int& dime, int& nickel, int& penny){
-	quarter = change/.25;
-	double long leftovers = fmod(change, .25);
-	dime = leftovers/.10;
-	leftovers = fmod(leftovers, .10);
-	nickel = leftovers/.05;
-	leftovers = fmod(leftovers, .05);
-	penny = (leftovers/.01)+fmod(leftovers, .01);
-	leftovers = fmod(leftovers, .01);
+int coins(int& change, int& quarter, int& dime, int& nickel, int& penny){
+	quarter = change/25;
+	int leftovers = change%25;
+	dime = leftovers/10;
+	leftovers = leftovers%10;
+	nickel = leftovers/5;
+	leftovers = leftovers%5;
+	penny = leftovers/1;
+	leftovers = leftovers%1;
 	change = leftovers;
 }
 
