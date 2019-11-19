@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-//function1: calculate and store the first 20 fib # in array
+//main: calculate and store the first 20 fib # in array
 //function2: print table of the numbers + a table of ratios (n/n-1)
 
 void printFib(double arr[2][21]);
