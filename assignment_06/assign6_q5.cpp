@@ -12,7 +12,7 @@ int main(){
 	cin >> number;
 	starting = number;
 	while(number/2 != 0){
-		string convert = to_string(number%2); //use updated compiler to run
+		string convert = to_string(number%2); //use updated compiler to run i.e "-std=c++11" when calling the compiler in compiler options
 		concat = concat + convert;
 		number = number/2;
 		if(number/2 == 0){
