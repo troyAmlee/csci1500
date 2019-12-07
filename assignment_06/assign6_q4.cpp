@@ -23,7 +23,7 @@ int main(){
 			longestWord = word;
 		}
 		sentence = sentence + word + " ";
-		cout << word[0] << endl;
+		
 	}while(!((word[0] == '.') || (word[0] == '!') || (word[0] == '?')));
 	cout << sentence << endl;
 	cout << "Number of words = " << wordCount << endl;
