@@ -38,3 +38,4 @@ string asterisk(int num, char ast){
 	}
 	return total;
 }
+
